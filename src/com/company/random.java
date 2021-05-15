@@ -9,13 +9,13 @@ public class random {
             a[i] = i;
         }
 
-        shuffle(a, 20);
+        randoms(a, 500001);
 
         for(int i=0; i < a.length; i++){
             System.out.println(a[i] + " ");
         }
     }
-    public static void shuffle(int[] array, int count){
+    public static void randoms(int[] array, int count){
         int t1, t2, r1, r2;
 
         for(int i=0; i<count; i++) {
