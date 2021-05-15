@@ -1,9 +1,13 @@
 package com.company;
 
-public class SelectionSort {
-    private static int data[] = {5, 10, 1, 7, 8, 6, 4, 2, 3, 9};
+import java.util.Random;
 
-    private static int[] sort(int[] data){
+public class SelectionSort {
+
+    private static int[] sort(){
+
+        int data[] = RandomNumbers.getNumbersArray();
+
         int i, j;
         int min;
         int index=0;
@@ -27,12 +31,12 @@ public class SelectionSort {
     public static void main(String[] args){
         long start, end;
         start = System.currentTimeMillis();
-        int results[] = sort(data);
+        int results[] = sort();
         end = System.currentTimeMillis();
         System.out.println((end - start) / 1000.0);
 
-        for(int a:results){
-            System.out.println(a);
-        }
+//        for(int a:results){
+//            System.out.println(a);
+//        }
     }
 }
